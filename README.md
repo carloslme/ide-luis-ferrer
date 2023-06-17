@@ -48,3 +48,16 @@ This repo contains the content and code of Introduction to Data Engineering for 
 * BigQuery
 * Cloud Functions
 
+## Fundamentals of Data Engineering
+### ETL and ELT
+* Extraction
+* Transformation
+* Load
+### Orchestration
+* Google Cloud Scheduler
+* Shipyard
+### Data warehousing
+* Data Warehouse
+* BigQuery
+### Batch processing
+* Pandas
