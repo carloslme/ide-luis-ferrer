@@ -1,6 +1,8 @@
 # intro-data-engineering
 This repo contains the content and code of Introduction to Data Engineering for non-programmers and data scientists.
 
+This course is focused on teaching the fundamentals of Data Engineering with open source tools, and simple pipelines, mostly developed in local environments.
+
 
 # Topics
 ## Introduction 
@@ -50,14 +52,20 @@ This repo contains the content and code of Introduction to Data Engineering for 
 
 ## Fundamentals of Data Engineering
 ### ETL and ELT
+* Data pipelines
 * Extraction
 * Transformation
 * Load
 ### Orchestration
 * Google Cloud Scheduler
 * Shipyard
+* Alerting (email)
 ### Data warehousing
 * Data Warehouse
 * BigQuery
 ### Batch processing
 * Pandas
+
+
+## Capstone project
+* Build and end-to-end simple data pipeline.
