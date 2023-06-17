@@ -1,5 +1,5 @@
 # intro-data-engineering
-This repo contains the content and code of Introduction to Data Engineering for non-programmers.
+This repo contains the content and code of Introduction to Data Engineering for non-programmers and data scientists.
 
 
 # Topics
@@ -36,3 +36,15 @@ This repo contains the content and code of Introduction to Data Engineering for 
 
 ### Folder structure
 * Working folder structure
+
+## Fundamentals of cloud computing
+### Cloud providers
+* Google Cloud Platform
+* Amazon Web Services
+* Azure
+### Common cloud resources for DE (GCP)
+* Google Cloud Storage
+* Google Compute Engine
+* BigQuery
+* Cloud Functions
+
