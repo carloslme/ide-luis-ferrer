@@ -138,3 +138,15 @@ Running this command creates the target directory (creating any parent directori
     source venv/bin/activate
     ```
 ## Google Colab
+
+### What is Colab?
+Colab, or "Colaboratory", allows you to write and execute Python in your browser, with
+
+* Zero configuration required
+* Access to GPUs free of charge
+* Easy sharing
+
+Whether you're a student, a data scientist or an AI researcher, Colab can make your work easier. Watch [Introduction to Colab](https://www.youtube.com/watch?v=inN8seMm7UI) to learn more.
+
+### Intro to Colab
+Please go to this notebook to learn more about Google Colab and how the tool will be used in this course.
