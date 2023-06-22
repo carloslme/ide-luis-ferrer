@@ -143,7 +143,7 @@ Requirements files serve as a list of items to be installed by pip, when using p
 For this section, ensure you have activated the virtual environment, and create a `requirements.txt` file in the `01-introduction/script` directory, then, copy and paste the following code and save the file:
     
 ```bash
-scikit-learn
+scikit-learn==1.2.2
 ```
 
 Once the file is created, `cd` to the script `01-introduction/script` and run the following command to install the required libraries within the virtual environment:
@@ -167,6 +167,18 @@ scipy==1.10.1
 threadpoolctl==3.1.0
 ```
 
+## Run the script
+Once you have activated your virtual environment and installed the requirements, just run the command as follows:
+```bash
+python svr.py 
+```
+You should see something like this:
+```bash
+[1.5]
+```
+
+Congrats! You have run your first script using a virtual environment on a local computer.
+
 ## Google Colab
 
 ### What is Colab?
@@ -179,4 +191,4 @@ Colab, or "Colaboratory", allows you to write and execute Python in your browser
 Whether you're a student, a data scientist or an AI researcher, Colab can make your work easier. Watch [Introduction to Colab](https://www.youtube.com/watch?v=inN8seMm7UI) to learn more.
 
 ### Intro to Colab
-Please go to this notebook to learn more about Google Colab and how the tool will be used in this course.
+Please go to this [notebook](../script/svr.ipynb) to learn more about Google Colab and how the tool will be used in this course.
