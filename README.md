@@ -1,11 +1,13 @@
 # intro-data-engineering
 This repo contains the content and code of Introduction to Data Engineering for non-programmers and data scientists.
 
-This course is focused on teaching the fundamentals of Data Engineering with open source tools, and simple pipelines, mostly developed in local environments.
+This course is focused on teaching the fundamentals of Data Engineering with open-source tools, and simple pipelines, mostly developed in local environments with a practical-oriented approachment.
 
 
 # Topics
 ## Introduction 
+### About this course
+### Prerequisites
 ### Setup
 * Virtual environments
 * Google Colab
@@ -17,6 +19,7 @@ This course is focused on teaching the fundamentals of Data Engineering with ope
 ### Introduction to Python
 * Data types
 * Functions
+* Coding conventions (PEP8, Pylint)
 * Best practices
 
 ### Task automation
@@ -38,6 +41,11 @@ This course is focused on teaching the fundamentals of Data Engineering with ope
 
 ### Folder structure
 * Working folder structure
+
+### Version control
+* Intro to GitHub
+* Git fundamentals
+* Collaborating on GitHub
 
 ## Fundamentals of cloud computing
 ### Cloud providers
@@ -68,4 +76,4 @@ This course is focused on teaching the fundamentals of Data Engineering with ope
 
 
 ## Capstone project
-* Build and end-to-end simple data pipeline.
+* Build an end-to-end simple data pipeline.
