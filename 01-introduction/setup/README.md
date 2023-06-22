@@ -60,8 +60,81 @@ There are two ways to install Python on Windows.
     python --version
     ```
 
-
+### Mac:
+You can use brew to install Python 3.10, just run the following steps: 
+* Ensure you have brew installed
+    
+* Run this command to install Python
+        ```bash
+    brew install python@3.10
+    ```
+* Verify that Python is installed correctly by running:
+    ```bash
+    python --version
+    ``` 
 ## Virtual Environments
+A virtual environment is created on top of an existing Python installation, known as the virtual environment’s “base” Python, and may optionally be isolated from the packages in the base environment, so only those explicitly installed in the virtual environment are available.
 
+It is quite important because it allows you to separate different package versions of the code. For example, if you are using `scikit-learn` in one experiment, save your model with that version and later try to open the file with a new version, there may be problems when reading the file. 
 
+### Available options
+You can use several options to create the virtual environments, some examples are:
+* [venv](https://docs.python.org/3/library/venv.html)
+* [conda](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
+* [pyenv](https://github.com/pyenv/pyenv-virtualenv)
+
+In this course, we will be using `venv`.
+
+### Creating virtual environments
+Creation of virtual environments is done by executing the command venv:
+
+```bash
+python -m venv /path/to/new/virtual/environment
+```
+Running this command creates the target directory (creating any parent directories that don’t exist already) and places a pyvenv.cfg file in it with a home key pointing to the Python installation from which the command was run (a common name for the target directory is .venv). It also creates a bin (or Scripts on Windows) subdirectory containing a copy/symlink of the Python binary/binaries (as appropriate for the platform or arguments used at environment creation time). It also creates an (initially empty) lib/pythonX.Y/site-packages subdirectory (on Windows, this is Lib\site-packages). If an existing directory is specified, it will be re-used.
+
+#### Windows
+
+* Create the `venv`
+    ```bash
+    c:\>c:\Python35\python -m venv c:\path\to\myenv
+    ```
+
+    Alternatively, if you configured the PATH and PATHEXT variables for your Python installation:
+    ```bash
+    c:\>python -m venv c:\path\to\myenv
+    ```
+
+* Activate the `venv`
+    Once an environment has been created, you may wish to activate it, e.g. by sourcing an activate script in its bin directory.
+    ```bash
+    C:\> <venv>\Scripts\activate.bat
+    ```
+#### Linux
+* `cd` to your project directory and run `virtualenv` to create the new virtual environment.
+
+* The following commands will create a new virtual environment under my-project/my-venv.
+    ```bash
+    cd my-project
+    virtualenv --python python3.6 venv
+    ```
+* Activate the `venv`
+    Now that we have a virtual environment, we need to activate it.
+    ```bash
+    source venv/bin/activate
+    ```
+
+#### Mac
+* `cd` to your project directory and run `venv` to create the new virtual environment.
+
+* The following commands will create a new virtual environment under my-project/my-venv.
+    ```bash
+    cd my-project
+    python3.10 -m venv venv
+    ```
+* Activate the `venv`
+    Now that we have a virtual environment, we need to activate it.
+    ```bash
+    source venv/bin/activate
+    ```
 ## Google Colab
