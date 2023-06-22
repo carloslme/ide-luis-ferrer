@@ -42,6 +42,11 @@ This course is focused on teaching the fundamentals of Data Engineering with ope
 ### Folder structure
 * Working folder structure
 
+### Version control
+* Intro to GitHub
+* Git fundamentals
+* Collaborating on GitHub
+
 ## Fundamentals of cloud computing
 ### Cloud providers
 * Google Cloud Platform
