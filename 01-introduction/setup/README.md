@@ -25,6 +25,40 @@ There are two ways to install Python on Windows.
 
     * The Microsoft Store installation of Python includes pip, the standard package manager. Pip allows you to install and manage additional packages that are not part of the Python standard library. To confirm that you also have pip available to install and manage packages, enter `pip --version`.
 
+### Linux:
+* First, open a terminal on your Linux system. You can usually find it in the Applications or System Tools menu, or by using the Ctrl + Alt + T keyboard shortcut.
+* Update the package lists of your package manager by running the following command:
+    ```bash
+    sudo apt update
+    ```
+* Install the required dependencies by executing the following command:
+    ```bash
+    sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev
+    ```
+* Next, install pyenv, a tool that allows you to manage multiple Python versions. Run the following commands one by one:
+    ```bash
+    curl https://pyenv.run | bash
+    echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> ~/.bashrc
+    echo 'eval "$(pyenv init --path)"' >> ~/.bashrc
+    echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
+    source ~/.bashrc
+    ```
+* Install the required build dependencies for Python by executing the following command:
+    ```bash
+    sudo apt install make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
+    ```
+* Install Python 3.10 (or any other version you desire) using pyenv:
+    ```bash
+    pyenv install 3.10.0
+    ```
+* Set Python 3.10 as the default version:
+    ```bash
+    pyenv global 3.10.0
+    ```
+* Verify that Python is installed correctly by running:
+    ```bash
+    python --version
+    ```
 
 
 ## Virtual Environments
