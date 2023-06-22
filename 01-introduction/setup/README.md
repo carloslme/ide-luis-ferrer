@@ -137,6 +137,36 @@ Running this command creates the target directory (creating any parent directori
     ```bash
     source venv/bin/activate
     ```
+## Install libraries
+Requirements files serve as a list of items to be installed by pip, when using pip install. Files that use this format are often called “pip requirements.txt files”, since requirements.txt is usually what these files are named (although, that is not a requirement). Check [this](https://pip.pypa.io/en/stable/reference/requirements-file-format/) out to learn more about it.
+
+For this section, ensure you have activated the virtual environment, and create a `requirements.txt` file in the `01-introduction/script` directory, then, copy and paste the following code and save the file:
+    
+```bash
+scikit-learn
+```
+
+Once the file is created, `cd` to the script `01-introduction/script` and run the following command to install the required libraries within the virtual environment:
+
+```bash
+cd 01-introduction/script
+pip install -r requirements.txt
+```
+
+After the installation, verify it by running this command:
+
+```bash
+pip freeze
+```
+You should see something like this:
+```bash
+joblib==1.2.0
+numpy==1.25.0
+scikit-learn==1.2.2
+scipy==1.10.1
+threadpoolctl==3.1.0
+```
+
 ## Google Colab
 
 ### What is Colab?
