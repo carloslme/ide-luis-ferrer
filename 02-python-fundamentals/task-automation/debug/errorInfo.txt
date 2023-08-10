@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/var/folders/35/8v_drh1j08g9y_xx09qfcn300000gn/T/ipykernel_20016/574075980.py", line 3, in <module>
+    raise Exception('This is the error message.')
+Exception: This is the error message.
