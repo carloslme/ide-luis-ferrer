@@ -1,6 +1,6 @@
 # Task Automation
 
-This session explains how to interact with your operating system in order to handle, and organize them using Python code.
+This session explains how to interact with your operating system to handle and organize them using Python code.
 
 A debug section is also included to learn how to improve debugging skills when programming.
 
