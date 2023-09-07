@@ -22,14 +22,14 @@ It is important to set up your virtual environment before starting with the cour
 
 ## Activity
 
-In this activity, you will migrate and solve the package issues regarding a notebook that was created in a `Python 3.11.2` version.
+In this activity, you will migrate and solve the package issues regarding a notebook that was created in a `Python 3.7.9` version.
 
 Follow the instructions below to do the activity.
 
 ### Run the existing notebook
 
 1. Clone the project `https://github.com/carloslme/intro-data-engineering.git` on your local computer.
-2. Create a virtual environment with `Python 3.11.2`
+2. Create a virtual environment with `Python 3.7.9`
     * Create venv
 
         ```
@@ -37,16 +37,19 @@ Follow the instructions below to do the activity.
         ```
 
     * Activate the virtual environment
-
+        * For MacOS
+        ```
+        source venv/bin/activate
+        ```
+        * For Windows
         ```
         intro-data-engineering\venv\Scripts\Activate.ps1
         ```
-
 3. Install libraries
     Run the following command to install the other libraries.
 
     ```bash
-    pip install -r intro-data-engineering\01-introduction\activity\requeriments-311.txt
+    pip install -r intro-data-engineering\01-introduction\activity\requeriments-37.txt
     ```
     > **IMPORTANT!**  
     The correct path of the requirements file must be entered, this can be done by copying the path of the file in the explorer.
@@ -61,52 +64,45 @@ Follow the instructions below to do the activity.
     Output:
     <details open>
     <summary>List of packages, click to collapse</summary>
-  
-        asttokens==2.4.0
+        
+        appnope==0.1.3
         backcall==0.2.0
-        colorama==0.4.6
-        comm==0.1.4
-        contourpy==1.1.0
         cycler==0.11.0
-        debugpy==1.6.7.post1
+        debugpy==1.6.7
         decorator==5.1.1
-        executing==1.2.0
-        fonttools==4.42.1
-        ipykernel==6.25.2
-        ipython==8.15.0
-        jedi==0.19.0
-        joblib==1.3.2
-        jupyter_client==8.3.1
-        jupyter_core==5.3.1
-        kiwisolver==1.4.5
-        matplotlib==3.7.2
+        entrypoints==0.4
+        ipykernel==6.16.2
+        ipython==7.34.0
+        jedi==0.18.2
+        joblib==1.0.1
+        jupyter-client==7.4.9
+        jupyter-core==4.12.0
+        kiwisolver==1.4.4
+        matplotlib==3.4.0
         matplotlib-inline==0.1.6
-        nest-asyncio==1.5.7
-        numpy==1.25.2
+        nest-asyncio==1.5.6
+        numpy==1.21.6
         packaging==23.1
-        pandas==2.0.3
+        pandas==1.3.3
         parso==0.8.3
+        pexpect==4.8.0
         pickleshare==0.7.5
-        Pillow==10.0.0
-        platformdirs==3.10.0
+        Pillow==9.5.0
         prompt-toolkit==3.0.39
         psutil==5.9.5
-        pure-eval==0.2.2
-        Pygments==2.16.1
-        pyparsing==3.0.9
+        ptyprocess==0.7.0
+        Pygments==2.15.1
+        pyparsing==3.1.0
         python-dateutil==2.8.2
-        pytz==2023.3.post1
-        pywin32==306
-        pyzmq==25.1.1
-        scikit-learn==1.3.0
-        scipy==1.11.2
+        pytz==2023.3
+        pyzmq==25.1.0
+        scikit-learn==0.20.0
+        scipy==1.7.3
         seaborn==0.12.2
         six==1.16.0
-        stack-data==0.6.2
-        threadpoolctl==3.2.0
-        tornado==6.3.3
+        tornado==6.2
         traitlets==5.9.0
-        tzdata==2023.3
+        typing-extensions==4.7.1
         wcwidth==0.2.6
 
     </details>
@@ -118,10 +114,11 @@ Follow the instructions below to do the activity.
     If everything was ok, you should be able to see the last cell with this output:
 
     ```bash
-    Predictions:[ 75446.   298423.01  82109.   ... 157926.   239522.    71491.  ]
+    Predictions:[263527.   331884.02 221119.   ... 105722.   213199.   459125.66]
+
     ```
 
-**Congrats, the notebook is running in a virtual environment with Python 3.11.2!**
+**Congrats, the notebook is running in a virtual environment with Python 3.7.9!**
 
 ### Migrating to Python 3.10.9
 
